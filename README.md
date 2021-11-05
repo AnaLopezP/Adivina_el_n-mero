@@ -7,3 +7,19 @@ Hemos resuelto un juego de adivinar números, en el que la máquina elige un nú
 El diagrama de flujo que tenemos en nuestro código es el siguiente:
 
 ![diagrama de flujo adivine el número](/AnaLopezP/Adivina_el_numero/Adivina_el_número_flujo.jpg)
+import random
+numero = random.randint(0,100)
+print(numero)
+print("Intente con un número entero.")
+intento = int(input())
+while intento != numero:
+    if intento > 99:
+        print("El número está entre 0 y 99. Elige otro.")
+    else:
+        if intento > numero:
+            print("Te has pasado.")
+        else:
+            print("Te has quedado corto.")
+    intento = int(input())
+if intento == numero:
+     print("¡Felicidades, has acertado!")
