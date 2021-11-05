@@ -8,7 +8,7 @@ El diagrama de flujo que tenemos en nuestro código es el siguiente:
 
 ![diagrama de flujo adivine el número](/AnaLopezP/Adivina_el_numero/Adivina_el_número_flujo.jpg)
 
-```import random
+``import random
 numero = random.randint(0,100)
 print(numero)
 print("Intente con un número entero.")
@@ -23,4 +23,4 @@ while intento != numero:
             print("Te has quedado corto.")
     intento = int(input())
 if intento == numero:
-     print("¡Felicidades, has acertado!")´´´
+     print("¡Felicidades, has acertado!")´´
